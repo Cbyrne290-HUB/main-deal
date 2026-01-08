@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C. Byrne | Ventures & Strategic Execution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] },
+                    colors: {
+                        obsidian: '#05070a',
+                        surface: '#0f1115',
+                        accent: '#2563eb',
+                        glass: 'rgba(255, 255, 255, 0.03)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #05070a; color: #94a3b8; }
+        .bento-card { 
+            background: rgba(15, 17, 21, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            transition: all 0.3s ease;
+        }
+        .bento-card:hover { border-color: #2563eb; transform: translateY(-4px); }
+        .gradient-text {
+            background: linear-gradient(to right, #ffffff, #64748b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-accent selection:text-white">
+
+    <nav class="fixed w-full z-50 top-0 py-6 px-10">
+        <div class="max-w-6xl mx-auto flex justify-between items-center bg-surface/80 border border-white/5 backdrop-blur-xl px-6 py-3 rounded-full">
+            <div class="text-white font-extrabold tracking-tighter text-xl">C.BYRNE<span class="text-accent">_</span></div>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-widest">
+                <a href="#portfolio" class="hover:text-white transition">Portfolio</a>
+                <a href="#investors" class="hover:text-white transition text-accent">Investor Portal</a>
+                <a href="#contact" class="hover:text-white transition">Hire</a>
+            </div>
+            <a href="#contact" class="bg-white text-black px-5 py-2 rounded-full text-xs font-bold uppercase hover:bg-accent hover:text-white transition">Book Now</a>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6 pt-40 pb-20">
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+            <div class="md:col-span-2 bento-card p-10 flex flex-col justify-end min-h-[400px]">
+                <span class="text-accent font-bold tracking-[0.3em] text-xs uppercase mb-4">Strategic Execution Partner</span>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-[1.1] tracking-tighter">
+                    I build products, <br><span class="gradient-text">not just code.</span>
+                </h1>
+                <p class="text-xl max-w-xl leading-relaxed">
+                    Zero fluff. High performance. I partner with founders and investors to turn high-risk ideas into scalable realities.
+                </p>
+            </div>
+            <div class="bento-card p-8 flex flex-col items-center justify-center text-center">
+                <div class="w-32 h-32 bg-gray-800 rounded-full mb-6 border-2 border-accent/30 overflow-hidden">
+                    <img src="profile.jpg" alt="Profile" class="w-full h-full object-cover grayscale">
+                </div>
+                <h2 class="text-white font-bold text-xl mb-2">Available for Hire</h2>
+                <p class="text-sm mb-6 text-gray-500">Currently taking on Q2 2026 projects.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white hover:text-accent transition"><i class="fab fa-linkedin text-2xl"></i></a>
+                    <a href="#" class="text-white hover:text-accent transition"><i class="fab fa-x-twitter text-2xl"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="portfolio" class="mb-32">
+            <h3 class="text-xs font-bold tracking-[0.5em] uppercase text-gray-500 mb-10 text-center">Proven Track Record</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="group cursor-pointer">
+                    <div class="h-[400px] bento-card mb-6 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-accent/10 group-hover:bg-accent/0 transition duration-500"></div>
+                        <div class="p-10">
+                            <h4 class="text-3xl font-bold text-white mb-2">FinTech Core Engine</h4>
+                            <p class="text-gray-400">Transaction processing at 10k/sec.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="h-[400px] bento-card mb-6 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-accent/10 group-hover:bg-accent/0 transition duration-500"></div>
+                        <div class="p-10">
+                            <h4 class="text-3xl font-bold text-white mb-2">AI Logistics SaaS</h4>
+                            <p class="text-gray-400">Automated supply chain routing MVP.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="investors" class="bg-accent/5 border border-accent/20 rounded-[40px] p-12 mb-32">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div class="max-w-2xl">
+                    <h2 class="text-4xl font-black text-white mb-4 italic tracking-tighter uppercase">Investor Relations</h2>
+                    <p class="text-lg">Access proprietary venture data, real-time ROI analysis, and milestone tracking. Strictly for accredited investors.</p>
+                </div>
+                <a href="#contact" class="mt-6 md:mt-0 bg-accent text-white px-8 py-4 rounded-xl font-bold hover:scale-105 transition shadow-lg shadow-accent/20">
+                    SIGN NDA FOR ACCESS
+                </a>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bento-card p-6 border-white/10">
+                    <span class="block text-xs uppercase tracking-widest mb-2">Total Ventures</span>
+                    <span class="text-3xl font-bold text-white">04</span>
+                </div>
+                <div class="bento-card p-6 border-white/10">
+                    <span class="block text-xs uppercase tracking-widest mb-2">Target Goal</span>
+                    <span class="text-3xl font-bold text-white">$2.5M</span>
+                </div>
+                <div class="bento-card p-6 border-white/10">
+                    <span class="block text-xs uppercase tracking-widest mb-2">Raised to Date</span>
+                    <span class="text-3xl font-bold text-white">62%</span>
+                    <div class="w-full bg-gray-800 h-1 mt-4 rounded-full">
+                        <div class="bg-accent h-full w-[62%] rounded-full"></div>
+                    </div>
+                </div>
+                <div class="bento-card p-6 border-white/10">
+                    <span class="block text-xs uppercase tracking-widest mb-2">Next Milestone</span>
+                    <span class="text-3xl font-bold text-white">Q3 Launch</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-5xl font-extrabold text-white mb-6">Let's build.</h2>
+                <p class="text-xl mb-8">Whether it's a freelance contract or a venture investment, I don't waste time. Reach out if you have a clear vision and the capital to back it.</p>
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-surface rounded-full flex items-center justify-center border border-white/10">
+                            <i class="fas fa-envelope text-accent"></i>
+                        </div>
+                        <span class="text-white font-bold">yourname@email.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bento-card p-10">
+                <h3 class="text-2xl font-bold text-white mb-6 text-center">Schedule Strategy Session</h3>
+                <div class="bg-white/5 rounded-2xl h-80 flex items-center justify-center border-2 border-dashed border-white/10">
+                    <a href="https://calendly.com" target="_blank" class="text-accent font-bold underline">Connect Calendly API Here</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="py-20 text-center border-t border-white/5 text-xs tracking-widest uppercase font-bold text-gray-600">
+        &copy; 2026 C. BYRNE. STRATEGIC EXECUTION. ALL RIGHTS RESERVED.
+    </footer>
+
+</body>
+</html>
